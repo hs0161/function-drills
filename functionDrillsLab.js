@@ -11,9 +11,10 @@
   Call the function.
 */
 
-function helloWorld('Hello, World!'){
-  console.log(helloWorld)
+function helloWorld() {
+  console.log('Hello, World!')
 }
+helloWorld()
 
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -22,8 +23,8 @@ function helloWorld('Hello, World!'){
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-//CODE HERE
-
+const jsNinja = () => 'I am a JavaScript ninja!'
+ 
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -31,8 +32,11 @@ function helloWorld('Hello, World!'){
   Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
   Call the function, passing in an argument.
 */
+function printName(name) {
+  console.log(name)
+}
 
-//CODE HERE
+printName('Hannah')
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -45,7 +49,11 @@ function helloWorld('Hello, World!'){
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name) {
+  console.log(`Hello, ${name}`)
+}
+
+greeting('Hannah')
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -59,7 +67,16 @@ function helloWorld('Hello, World!'){
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+const compareNums = (num1, num2) => {
+  if (num1 > num2) {
+    return num1
+  } else {
+    return num2
+  } 
+} 
+console.log(compareNums(12, 8))
+
+
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -70,7 +87,15 @@ function helloWorld('Hello, World!'){
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+
+function add(num1, num2) {
+  num1 = +num1
+  num2 = +num2
+  return num1 + num2
+}
+
+const sum = add(12, 8)
+console.log(sum)
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -86,7 +111,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -101,7 +126,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -112,6 +137,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
+const exclaimThree = str => `${str.toUpperCase()}!!!`
 
 
 ////////////////// PROBLEM 9 ////////////////////
